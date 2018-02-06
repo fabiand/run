@@ -19,7 +19,7 @@ clone_and_run() {
     die "KubeVirt is already deployed. Exiting."
   fi
   info "Running the demo"
-  export VERSION=v0.1.0
+  export VERSION=v0.2.0
   kubectl create \
     -f https://github.com/kubevirt/kubevirt/releases/download/$VERSION/kubevirt.yaml \
     -f manifests/demo-pv.yaml
